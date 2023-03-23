@@ -642,70 +642,64 @@
         <form class="contact-form" name="call_back" novalidate>
           <label class="name">
             <span class="text-label">Name</span>
-            <div class="modal-form-field">
+            <span class="modal-form-field">
               <input
                 type="text"
                 class="contact-form-input"
                 id="name"
                 name="user_name"
-                required
-              />
+                required />
               <svg class="icon icon-name" width="18" height="18">
                 <use
                   href="./images/symbol-defs4.svg#icon-person-black-18dp-1-2-1"
-                ></use>
-              </svg></div
+                ></use></svg></span
           ></label>
 
           <label class="name">
             <span class="text-label">Phone</span>
-            <div class="modal-form-field">
+            <span class="modal-form-field">
               <input
                 type="tel"
                 class="contact-form-input"
                 id="number"
                 name="user_phone"
-                required
-              />
+                required />
               <svg class="icon icon-phone" width="19" height="19">
                 <use
                   href="./images/symbol-defs4.svg#icon-phone-black-18dp-1-1-1"
-                ></use>
-              </svg></div
+                ></use></svg></span
           ></label>
 
-          <div class="modal-form-field">
-            <label class="name"><span class="text-label">Email</span>
-            <div class="modal-form-field">
-            <input
-              type="email"
-              class="contact-form-input"
-              id="mail"
-              name="user_email"
-              required
-              autocomplete="off"
-            />
-            <svg class="icon icon-mail" width="21" height="18">
-              <use
-                href="./images/symbol-defs4.svg#icon-email-black-18dp-1-1-1"
-              ></use>
-            </svg>
-          </div></label>
+          <label class="name"
+            ><span class="text-label">Email</span>
+            <span class="modal-form-field">
+              <input
+                type="email"
+                class="contact-form-input"
+                id="mail"
+                name="user_email"
+                required
+                autocomplete="off" />
+              <svg class="icon icon-mail" width="21" height="18">
+                <use
+                  href="./images/symbol-defs4.svg#icon-email-black-18dp-1-1-1"
+                ></use></svg></span
+          ></label>
 
-          <label  class="name">
-            <span class="text-label">Comment</span><textarea
-            name="comment"
-            id="comment"
-            class="contact-form-message"
-            placeholder="Text input"
-          ></textarea></label>
-         
-          
-            <input id="user_policy" type="checkbox" />
-             <label for="user_policy" class="policy-check">
-            
-              I accept the terms and conditions of the
-              <a href="">Privacy Policy</a>
+          <label class="name">
+            <span class="text-label">Comment</span
+            ><textarea
+              name="comment"
+              id="comment"
+              class="contact-form-message"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+
+          <input id="user_policy" type="checkbox" />
+          <label for="user_policy" class="policy-check">
+            I accept the terms and conditions of the
+            <a href="">Privacy Policy</a>
           </label>
           <button type="submit" class="modal-btn contact-form-btn">Send</button>
         </form>
