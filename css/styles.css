@@ -624,6 +624,7 @@ img {
   padding-left: 38px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  margin-top: 4px;
   margin-bottom: 8px;
   outline: none;
   transition: border-color var(--transition-time);
@@ -638,6 +639,7 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   margin-bottom: 16px;
+  margin-top: 4px;
   padding: 8px 16px;
   resize: none;
   outline: none;
@@ -661,6 +663,15 @@ img {
   line-height: 1.2;
   letter-spacing: 0.04em;
   color: var(--color-border-customers);
-  margin-top: 8px;
-  margin-bottom: 4px;
+}
+.modal-form-field {
+  display: block;
+  position: relative;
+}
+.icon-name {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  fill: #404bbf;
 }
