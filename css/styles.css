@@ -701,7 +701,7 @@ img {
 .contact-form-input:focus + .icon {
   fill: var(--color-link);
 }
-.policy {
+.check-policy {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.2;
