@@ -97,11 +97,10 @@ img {
   letter-spacing: 0.04em;
   color: var(--theme-dark-color-text);
   background: var(--color-WEB-background-btn);
-  transition: color, background-color var(--transition-time);
+  transition: background-color var(--transition-time);
 }
 .modal-btn:hover,
 .modal-btn:focus {
-  color: var(--theme-dark-color-text);
   background-color: var(--color-link);
 }
 .section {
@@ -568,11 +567,12 @@ img {
   width: 408px;
   height: 576px;
   left: 516px;
-  top: 88px;
+  top: 80px;
   background-color: var(--color-modal);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  padding: 72px 24px 24px 24px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -590,11 +590,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background var(--transition-time);
+  transition: background-color var(--transition-time);
 }
 .modal-close:hover,
 .modal-close:focus {
-  background: var(--color-link);
+  background-color: var(--color-link);
   cursor: pointer;
 }
 .clouse-btn {
@@ -604,4 +604,44 @@ img {
 .modal-close:hover .close-btn,
 .modal-close:focus .close-btn {
   fill: var(--theme-dark-color-text);
+}
+.modal-title {
+  width: 360px;
+  height: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color-text);
+  margin-bottom: 34px;
+}
+
+.contact-form-input {
+  width: 360px;
+  height: 40px;
+  padding-left: 38px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  margin-bottom: 26px;
+  transition: border-color var(--transition-time);
+}
+.contact-form-input:hover,
+.contact-form-input:focus {border-color: var(--color-WEB-background-btn);
+  
+}
+.contact-form-message {
+  width: 360px;
+  height: 120px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  resize: none;
+}
+.contact-form-btn {
+  width: 169px;
+  height: 56px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }

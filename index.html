@@ -628,6 +628,7 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <p class="modal-title">Leave your contacts and we will call you back</p>
         <div class="modal-close-btn">
           <button data-modal-close class="modal-close" type="button">
             <svg class="close-btn" width="8" height="8">
@@ -639,9 +640,33 @@
         </div>
 
         <form class="contact-form">
-          <input type="text" class="contact-form-input" />
-          <input type="text" class="contact-form-input" />
-          <input type="text" class="contact-form-input" />
+          <input
+            type="text"
+            class="contact-form-input"
+            placeholder=""
+            name="user_name"
+            required
+          />
+          <input
+            type="tel"
+            class="contact-form-input"
+            placeholder=""
+            name="user_phone"
+            required
+          />
+          <input
+            type="email"
+            class="contact-form-input"
+            placeholder=""
+            name="user_email"
+            required
+          />
+          <textarea
+            name=""
+            class="contact-form-message"
+            placeholder="Text input"
+          ></textarea>
+          <button type="submit" class="modal-btn contact-form-btn">Send</button>
         </form>
       </div>
     </div>
