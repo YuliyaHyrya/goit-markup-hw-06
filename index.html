@@ -695,12 +695,20 @@
               placeholder="Text input"
             ></textarea>
           </label>
-
-          <input id="user_policy" type="checkbox" />
-          <label for="user_policy" class="policy-check">
-            I accept the terms and conditions of the
-            <a href="">Privacy Policy</a>
-          </label>
+          <div class="checkbox-wrapper"><input
+            id="checkbox"
+            type="checkbox"
+            name="user_policy-check"
+            class="modal-policy-check is-hidden"
+          /><label for="checkbox" class="policy-check"
+            >&nbsp;I accept the terms and conditions of the&nbsp;<a href=""
+              >Privacy Policy</a
+            >
+            <span class="checkbox-icon"><svg class="icon-property" width="16" height="16">
+              <use href="./images/symbol-defs4.svg#icon-Property_click"></use>
+            </svg></span
+            ></div>
+          
           <button type="submit" class="modal-btn contact-form-btn">Send</button>
         </form>
       </div>
