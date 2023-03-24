@@ -407,11 +407,11 @@ img {
 .text-footer-link {
   margin-top: 0;
   margin-bottom: 16px;
-  font-weight: 500;
+  font-family: var(--primary-font);
+  font-style: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
-
+  letter-spacing: 0.04em;
   color: var(--theme-dark-color-text);
 }
 .social-link-inner {
@@ -445,6 +445,72 @@ img {
 .social-link-list-ftr:hover,
 .social-link-list-ftr:focus {
   background-color: var(--accent-footer-social-link);
+}
+/* Subscribe form footer  */
+.form-for-subscribe {
+  display: flex;
+}
+.subscribe-form-input {
+  width: 264px;
+  height: 40px;
+  background-color: var(--secondary-color-text);
+  border: 1px solid var(--theme-dark-color-text);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-top: 16px;
+  padding-left: 16px;
+  outline: none;
+  font-family: var(--primary-font);
+  font-style: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--theme-dark-color-text);
+  transition: border-color var(--transition-time);
+}
+.subscribe-form-input:focus {
+  border-color: var(--color-link);
+}
+.subscribe-form-input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(24 / 12);
+  letter-spacing: 0.04em;
+  color: var(--theme-dark-color-text);
+  top: 18px;
+}
+.btn-subscribe-text {
+  font-family: var(--primary-font);
+  font-style: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--theme-dark-color-text);
+}
+.subscribe-icon {
+  margin-left: 16px;
+}
+.subscribe-form-btn {
+  width: 165px;
+  height: 40px;
+  margin-top: 40px;
+  background-color: var(--color-WEB-background-btn);
+  border-radius: 4px;
+  border: none;
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--theme-dark-color-text);
+  transition: background-color var(--transition-time);
+}
+.subscribe-form-btn:hover,
+.subscribe-form-btn:focus {
+  background-color: var(--color-link);
 }
 /* PORTFOLIO */
 .portfolio-btn {
