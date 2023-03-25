@@ -797,6 +797,7 @@ img {
   position: relative;
 }
 .modal-policy-check {
+  outline: none;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -814,11 +815,10 @@ img {
   width: 16px;
   height: 16px;
   border-radius: 4px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: var(--color-modal);
   color: transparent;
   transition: background-color var(--transition-time);
-  background-color: var(--color-modal);
 }
-.modal-policy-check:checked > .icon-property {
+.modal-policy-check:checked + .policy-check > .checkbox-icon {
   background-color: var(--color-link);
 }
