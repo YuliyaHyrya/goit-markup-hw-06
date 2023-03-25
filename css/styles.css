@@ -782,11 +782,6 @@ img {
 .modal-policy-check:focus + .policy-check::before {
   outline: 2px solid rgba(0, 0, 255, 0.5); */
 
-.modal-policy-check {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
 .policy-check {
   width: 360px;
   height: 56px;
@@ -801,6 +796,13 @@ img {
   color: var(--color-border-customers);
   position: relative;
 }
+.modal-policy-check {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+}
+
 .icon-property {
   fill: currentColor;
 }
@@ -817,6 +819,6 @@ img {
   transition: background-color var(--transition-time);
   background-color: var(--color-modal);
 }
-.modal-policy-check:checked + .policy-check > .checkbox-icon {
+.modal-policy-check:checked > .icon-property {
   background-color: var(--color-link);
 }
