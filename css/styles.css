@@ -769,17 +769,7 @@ img {
 .contact-form-input:focus + .icon {
   fill: var(--color-link);
 }
-.policy-check {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.2;
-  letter-spacing: 0.04em;
-  color: var(--color-border-customers);
-  position: relative;
-}
+
 /* .policy-check::before { */
 /* display: block;
   width: 16px;
@@ -796,13 +786,28 @@ img {
   width: 360px;
   height: 56px;
   margin: 0;
+  position: relative;
+}
+.modal-policy-check {
+  position: absolute;
+  top: 16px;
+  left: 0px;
+}
+.policy-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: var(--color-border-customers);
+  margin-top: 16px;
+  position: relative;
 }
 .icon-property {
   fill: currentColor;
-  cursor: pointer;
-  transition: fill var(--transition-time);
 }
-
 .checkbox-icon {
   position: absolute;
   top: 0px;
@@ -813,8 +818,8 @@ img {
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   color: transparent;
-  background-color: var(--color-modal);
-  transition: background-color, color var(--transition-time);
+  transition: background-color var(--transition-time);
+  /* background-color: var(--color-modal); */
 }
 .modal-policy-check:checked + .policy-check > .checkbox-icon {
   background-color: var(--color-link);
